@@ -4,7 +4,7 @@
 # https://github.com/jlesage/docker-baseimage-gui
 #
 
-ARG BASEIMAGE=alpine-3.12
+ARG BASEIMAGE=alpine:3.12
 
 # Pull base image.
 FROM ${BASEIMAGE} as gui
