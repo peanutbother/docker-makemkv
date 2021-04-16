@@ -1,5 +1,5 @@
 # Docker container for MakeMKV
-[![Docker Image Size](https://img.shields.io/microbadger/image-size/jlesage/makemkv)](http://microbadger.com/#/images/jlesage/makemkv) [![Build Status](https://drone.le-sage.com/api/badges/jlesage/docker-makemkv/status.svg)](https://drone.le-sage.com/jlesage/docker-makemkv) [![GitHub Release](https://img.shields.io/github/release/jlesage/docker-makemkv.svg)](https://github.com/jlesage/docker-makemkv/releases/latest) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/JocelynLeSage/0usd)
+[![Docker Image Size](https://img.shields.io/microbadger/image-size/bricksoft/makemkv)](http://microbadger.com/#/images/bricksoft/makemkv) [![GitHub Release](https://img.shields.io/github/release/peanutbother/docker-makemkv.svg)](https://github.com/peanutbother/docker-makemkv/releases/latest) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/JocelynLeSage/0usd)
 
 This is a Docker container for [MakeMKV](http://www.makemkv.com/).
 
@@ -35,7 +35,7 @@ docker run -d \
     -v $HOME/MakeMKV/output:/output:rw \
     --device /dev/sr0 \
     --device /dev/sg2 \
-    jlesage/makemkv
+    bricksoft/makemkv
 ```
 
 Where:
@@ -48,9 +48,13 @@ Where:
 Browse to `http://your-host-ip:5800` to access the MakeMKV GUI.
 Files from the host appear under the `/storage` folder in the container.
 
+## About this fork
+
+This fork is an attempt to provide a multi-arch docker image for Docker using docker's buildx plugin. Credit for original work goes to [@jlesage](https://github.com/jlesage).
+
 ## Documentation
 
-Full documentation is available at https://github.com/jlesage/docker-makemkv.
+Full documentation is available at https://github.com/peanutbother/docker-makemkv.
 
 ## Support or Contact
 
@@ -59,4 +63,4 @@ Having troubles with the container or have questions?  Please
 
 For other great Dockerized applications, see https://jlesage.github.io/docker-apps.
 
-[create a new issue]: https://github.com/jlesage/docker-makemkv/issues
+[create a new issue]: https://github.com/peanutbother/docker-makemkv/issues
