@@ -16,6 +16,6 @@ before_install:
   - chmod a+x ~/.docker/cli-plugins/docker-buildx
 
 script:
-  - echo $DOCKER_PASSWORD | docker login -u "$DOCKER_USERNAME" -password-stdin
+  - echo $DOCKER_PASSWORD | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker buildx create --driver docker-container --use
   - docker buildx build --platform linux/arm64,linux/amd64 --push --tag bricksoft/makemkv:latest .
